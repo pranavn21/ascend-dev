@@ -1,1 +1,7 @@
-{}
+{
+  "projects": {
+    "default": "ascend-project-2024"
+  },
+  "targets": {},
+  "etags": {}
+}
