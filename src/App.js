@@ -4,6 +4,7 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import FraudDetection from "./components/FraudDetection/FraudDetection";
 import LoanAssistance from "./components/LoanAssistance/LoanAssistance";
 import PaymentSolutions from "./components/PaymentSolutions/PaymentSolutions";
+import Login from './components/Login/Login'
 
 function App() {
   const [activeComponent, setActiveComponent] = useState("Dashboard");
@@ -18,8 +19,11 @@ function App() {
         return <LoanAssistance />;
       case "PaymentSolutions":
         return <PaymentSolutions />;
+      case "Login":
+        return <Login />;
       default:
         return <Dashboard />;
+
     }
   };
 
@@ -31,6 +35,7 @@ function App() {
           <li onClick={() => setActiveComponent("FraudDetection")}>Fraud Detection</li>
           <li onClick={() => setActiveComponent("LoanAssistance")}>Loan Assistance</li>
           <li onClick={() => setActiveComponent("PaymentSolutions")}>Payment Solutions</li>
+          <li onClick={() => setActiveComponent("Login")}>Login</li>
         </ul>
       </nav>
       <div className="content">{renderComponent()}</div>
