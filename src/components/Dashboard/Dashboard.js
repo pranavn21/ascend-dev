@@ -1,10 +1,9 @@
 import React from "react";
-
+import './Dashboard.css'
 const Dashboard = () => {
   return (
-    <div className="dashboard">
     
-      
+    <div className="dashboard">
 
       {/* Main Content */}
       <div className="main-content">
@@ -13,7 +12,7 @@ const Dashboard = () => {
           <p>Empowering small businesses with financial insights.</p>
         </header>
 
-        <section className="content">
+        <section className="content"> 
           <div className="card">
             <h2>Cash Flow</h2>
             <p>$12,345</p>
