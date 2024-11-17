@@ -22,7 +22,7 @@ const FraudDetection = () => {
         }
 
         // Rule 3: Unusual transaction location
-        if (transactionLocation.toLowerCase() !== 'home city' && transactionLocation) {
+        if (transactionLocation.toLowerCase() !== 'Dallas' && transactionLocation) {
             newAlerts.push('Transaction from an unusual location detected.');
         }
 
